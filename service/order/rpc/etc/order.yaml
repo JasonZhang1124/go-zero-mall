@@ -1,0 +1,21 @@
+Name: order.rpc
+ListenOn: 0.0.0.0:9003
+Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: order.rpc
+  
+UserRpc:
+  Etcd:
+    Hosts:
+      - 127.0.0.1:2379
+    Key: user.rpc
+
+ProductRpc:
+  Etcd:
+    Hosts:
+      - 127.0.0.1:2379
+    Key: product.rpc
+
+Mysql:
+  DataSource: root:123456@tcp(127.0.0.1:3306)/go-zero-mall?charset=utf8mb4&parseTime=True&loc=Local

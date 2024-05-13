@@ -1,0 +1,17 @@
+Name: Product
+Host: 0.0.0.0
+Port: 8002
+
+ProductRpc:
+  Etcd:
+    Hosts:
+      - 127.0.0.1:2379
+    Key: product.rpc
+
+Mysql:
+  DataSource: root:123456@tcp(127.0.0.1:3306)/go-zero-mall?charset=utf8mb4&parseTime=True&loc=Local
+
+
+Auth:
+  AccessSecret: uOvKLmVfztaXGpNYd4Z0I1SiT7MweJhl
+  AccessExpire: 86400

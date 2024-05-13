@@ -1,0 +1,25 @@
+Name: pay.rpc
+ListenOn: 0.0.0.0:9004
+Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: pay.rpc
+
+UserRpc:
+  Etcd:
+    Hosts:
+      - 127.0.0.1:2379
+    Key: user.rpc
+
+OrderRpc:
+  Etcd:
+    Hosts:
+      - 127.0.0.1:2379
+    Key: order.rpc
+
+Mysql:
+  Datasource: root:123456@tcp(127.0.0.1:3306)/go-zero-mall?charset=utf8mb4&parseTime=True&loc=Local
+Prometheus:
+  Host: 0.0.0.0
+  Port: 9094
+  Path: /metrics
