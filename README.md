@@ -23,7 +23,7 @@
 
 1.克隆项目到本地
 ```
-git clone https://github.com/JasonZhang1124/go-zero-mall.git
+git clone https://github.com/zhangdonglin11/go-zero-mall.git
 ```
 2.安装相关依赖
 ```
